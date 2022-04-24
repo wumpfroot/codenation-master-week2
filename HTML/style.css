@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Khand', sans-serif;
+}
+
+h1 {
+    color: aquamarine;
+    font-size: 69px;
+    padding: 0;
+}
+
+.container {
+    background-color: blueviolet;
+}
+
+#loremJibberish {
+    font-size: 35px;
+    padding: 10px;
+}
