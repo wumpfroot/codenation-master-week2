@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
 .square {
     width: 300px;
     height: 300px;
@@ -48,4 +54,70 @@
         background-color: wheat;
         box-shadow: 6px 10px 6px darkseagreen;
     }
+}
+
+.flex{
+    display: flex;
+}
+
+.parent-square{
+    background-color: black;
+    width: 550px;
+    height: 550px;
+    margin-left: 10em;
+}
+
+.parent-square p{
+    display: flex;
+    font-size: 3.5rem;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    top: 100px;
+}
+
+.parent-square:hover p{
+    background: linear-gradient(90deg, rgba(69,166,135,1) 22%, rgba(110,12,187,1) 50%, rgba(184,85,29,1) 80%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.child-square{
+    background-color: turquoise;
+    width: 100px;
+    height: 100px;
+    transition: .3s linear;
+    border-radius: 50%;
+}
+
+.parent-square:hover .child-square{
+    animation: bump 1s ease-in infinite;
+}
+
+@keyframes bump{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateY(450px);
+        background-color: blueviolet;
+    }
+
+    50%{
+        transform: translateX(450px) translateY(450px);
+        background-color: brown;
+    }
+
+    75%{
+        transform: translateX(450px);
+        background-color: yellowgreen;
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+
+
 }
