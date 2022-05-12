@@ -1,20 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .thegrid {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     background-color: blueviolet;
-    padding: 10px;
-    gap: 15px 30px;
+    gap: 10px 50px;
 }
 
 .grid-item{
-    background-color: rgb(168, 117, 216);
-    border: 1px solid black;
+    background-color: rgb(138, 238, 188);
+    border: 4px solid black;
     padding: 50px;
     font-size: 50px;
-}
-
-.item7 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
 }
